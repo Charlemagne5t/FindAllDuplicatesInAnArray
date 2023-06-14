@@ -25,4 +25,11 @@ public class SolutionTest {
         List<Integer> output = new ArrayList<>();
         Assert.assertEquals(output, new Solution().findDuplicates(nums));
     }
+
+    @Test
+    public void findDuplicatesTest4() {
+        int[] nums = {10,2,5,10,9,1,1,4,3,7};
+        List<Integer> output = new ArrayList<>(List.of(10, 1));
+        Assert.assertEquals(output, new Solution().findDuplicates(nums));
+    }
 }
